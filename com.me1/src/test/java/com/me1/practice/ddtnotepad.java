@@ -15,17 +15,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-<<<<<<< HEAD
-public class ddtnotepad {
-	@Test
-public void ddtnote() throws IOException {
-	FileInputStream fis = new FileInputStream("./Demo.properties");
-	Properties p = new Properties();
-	p.load(fis);
-	String URL = p.getProperty("url");
-	String un = p.getProperty("username");
-	String pwd = p.getProperty("pwd");
-=======
+
+
 import Generic_Utility.WebDriver_Utility;
 
 public class ddtnotepad {
@@ -41,7 +32,7 @@ public void ddtnote() throws IOException {
 //	String URL = p.getProperty("url");
 //	String un = p.getProperty("username");
 //	String pwd = p.getProperty("pwd");
->>>>>>> 9c7b148 (third day)
+
 	
 	WebDriver driver =new ChromeDriver();
 	driver.manage().window().maximize();
@@ -50,11 +41,11 @@ public void ddtnote() throws IOException {
 	WebElement email = driver.findElement(By.id("email"));
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	WebElement command1 = wait.until(ExpectedConditions.elementToBeClickable(email));
-<<<<<<< HEAD
+
 	command1.sendKeys("ausaf142@gmail.com");
-=======
+
 	command1.sendKeys(UN);
->>>>>>> 9c7b148 (third day)
+
 	
 	driver.close();
 	
